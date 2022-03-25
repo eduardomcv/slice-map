@@ -1,0 +1,19 @@
+{
+  "name": "slice-map",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardomcv/slice-map.git"
+  },
+  "author": "eduardomcv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardomcv/slice-map/issues"
+  },
+  "homepage": "https://github.com/eduardomcv/slice-map#readme"
+}
