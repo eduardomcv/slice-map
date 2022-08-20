@@ -12,10 +12,6 @@
     "url": "git+https://github.com/eduardomcv/slice-map.git"
   },
   "author": "eduardomcv",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eduardomcv/slice-map/issues"
-  },
   "homepage": "https://github.com/eduardomcv/slice-map#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.16.0",
