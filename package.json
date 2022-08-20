@@ -1,7 +1,7 @@
 {
   "name": "slice-map",
   "version": "0.0.1",
-  "description": "",
+  "description": "An implementation of slice + map done in a single iteration.",
   "main": "index.js",
   "scripts": {
     "test": "test",
