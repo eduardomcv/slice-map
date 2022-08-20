@@ -27,7 +27,9 @@ export interface SliceMapOptions<Item, MappedItem> {
  * @param options.start index where to start the slice (inclusive)
  * @param options.end index where to end the slice (non-inclusive)
  */
-export function sliceMap<Item, MappedItem>(options: SliceMapOptions<Item, MappedItem>): MappedItem[] {
+export function sliceMap<Item, MappedItem>(
+  options: SliceMapOptions<Item, MappedItem>,
+): MappedItem[] {
   const {
     array,
     start,
