@@ -37,8 +37,6 @@ export function sliceMap<Item, MappedItem>(
   let startIndex: number; // inclusive
   let endIndex: number; // non-inclusive
 
-  const mappedItems: MappedItem[] = [];
-
   if (typeof start === "undefined") {
     startIndex = 0;
   } else if (start < 0) {
@@ -55,11 +53,15 @@ export function sliceMap<Item, MappedItem>(
     endIndex = Math.min(end, arrayLength);
   }
 
-  for (let i = startIndex; i < endIndex; i += 1) {
-    const item = array[i];
-    const mappedItem = map(item, i, array);
-    mappedItems.push(mappedItem);
+  // if startIndex is larger than endIndex, create an empty array
+  const newLength = Math.max(endIndex - startIndex, 0);
+  const newArray: MappedItem[] = new Array(newLength);
+
+  for (let i = 0; i < newLength; i += 1) {
+    const offset = startIndex + i;
+    const mappedItem = map(array[offset], offset, array);
+    newArray[i] = mappedItem;
   }
 
-  return mappedItems;
+  return newArray;
 }
