@@ -30,12 +30,7 @@ export interface SliceMapOptions<Item, MappedItem> {
 export function sliceMap<Item, MappedItem>(
   options: SliceMapOptions<Item, MappedItem>,
 ): MappedItem[] {
-  const {
-    array,
-    start,
-    end,
-    map,
-  } = options;
+  const { array, start, end, map } = options;
 
   const arrayLength = array.length;
 
@@ -44,7 +39,7 @@ export function sliceMap<Item, MappedItem>(
 
   const mappedItems: MappedItem[] = [];
 
-  if (typeof start === 'undefined') {
+  if (typeof start === "undefined") {
     startIndex = 0;
   } else if (start < 0) {
     startIndex = arrayLength + start;
@@ -52,7 +47,7 @@ export function sliceMap<Item, MappedItem>(
     startIndex = start;
   }
 
-  if (typeof end === 'undefined') {
+  if (typeof end === "undefined") {
     endIndex = arrayLength;
   } else if (end < 0) {
     endIndex = arrayLength + end;
