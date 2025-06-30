@@ -1,1 +1,1 @@
-export { SliceMapOptions, sliceMap } from './sliceMap';
+export { SliceMapOptions, sliceMap } from "./sliceMap";
